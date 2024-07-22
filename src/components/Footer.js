@@ -1,25 +1,35 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
     return (
         <footer className='container-fluid d-flex justify-content-center'>
             <div className='mail'>
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a href="mailto:natemimon12@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-envelope-o color-icon" aria-hidden="true"></i>
+                </a>
             </div>
             <div className='phone'>
-                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+972505918875">
+                    <i className="fa fa-phone color-icon" aria-hidden="true"></i>
+                </a>
             </div>
             <div className='whatsapp'>
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <a href="https://wa.me/+972505918875" target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-whatsapp color-icon" aria-hidden="true"></i>
+                </a>
             </div>
-            <div className='instegram'>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+            <div className='instagram'>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-instagram color-icon" aria-hidden="true"></i>
+                </a>
             </div>
             <div className='facebook'>
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-facebook-square color-icon" aria-hidden="true"></i>
+                </a>
             </div>
         </footer>
-    )
+    );
 }
 
-export default Footer
+export default Footer;
