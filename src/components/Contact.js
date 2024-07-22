@@ -1,13 +1,32 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const Contact = () => {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        alert(`Name: ${name}\nPhone: ${phone}\nMessage: ${message}`);
+        const emailData = {
+            email: 'odeya.sadoun@gmail.com', 
+            subject: `New contact from ${name}`,
+            text: `
+                <p>Name: ${name}</p>
+                <p>Phone: ${phone}</p>
+                <p>Message: ${message}</p>
+            `,
+        };
+
+        try {
+            const response = await axios.post('http://localhost:5000/send-email', emailData);
+            if (response.status === 200) {
+                alert('Email sent successfully');
+            }
+        } catch (error) {
+            alert(error)
+            alert('Failed to send email');
+        }
     };
 
     return (
