@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/Header';
+import Footer from './components/Footer';
 import Main from './components/Main';
 import Recommendations from './components/Recommendations';
 
@@ -7,9 +7,9 @@ import Recommendations from './components/Recommendations';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Main/>
       <Recommendations />
+      <Footer/>
     </div>
   );
 }

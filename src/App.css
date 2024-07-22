@@ -33,3 +33,42 @@
 .text-container {
   margin-left: 1rem; /* Adjust as needed */
 }
+
+.main-image {
+  background-image: url(../public/images/person2.jpg);
+  background-size: cover;
+  height: 100%; 
+  width: 100%; 
+}
+
+.contact-container {
+  background: #ffffffad;
+}
+
+.header-font{
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .alef-regular {
+    font-family: "Alef", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .alef-bold {
+    font-family: "Alef", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .fa {
+    font-size:xx-large;
+    margin: 15px;
+  }
+
+  footer{
+    background: rgb(236, 162, 64);
+    margin-top: 32px;
+  }
